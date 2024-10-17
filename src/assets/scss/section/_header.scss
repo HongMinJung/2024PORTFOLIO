@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@use "../setting/mixin";
+
+#header {
+    @include mixin.position-fixed;
+    z-index: 10000;
+}
+
+.header_inner {
+    @include mixin.flex-between;
+    background-color: #c3c3c3;
+    backdrop-filter: blur(15px);
+    padding: 1.4rem;
+
+    .header_logo {
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .header_nav {
+        // MO ver - toggle menu
+        @media (max-width:800px) {
+            display: none;
+
+            &.show {
+                display: block; 
+
+                ul {
+                    display: block;
+                    position: absolute;
+                    top: 58px;
+                    right: 0;
+                    background-color: #c3c3c3;
+                    backdrop-filter: blur(15px);
+                    z-index: 3000;
+                    min-width: 100%;
+                    padding: 20px 0;
+
+                    li {
+                        display: block;
+                        text-align: center;
+
+                        a {
+                            display: inline-block;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+            // hmaburmanu -> X 변경
+            &.show + .header_mo_nav span {
+                
+                height: 0;
+                transition: all 0.1s ease;
+                
+                &::before {
+                    top: 50%;
+                    transform: translateY(-50%) rotate(45deg);
+                }
+                &::after {
+                    top: 50%;
+                    transform: translateY(-50%) rotate(-45deg);
+                }
+            }
+        }
+        // MO ver - gnb hover
+        li {
+            display: inline;
+
+            a {
+                position: relative;
+                font-size: 14px;
+                padding: 16px;
+
+                &:hover {
+                    font-weight: 500;
+                }
+
+                &::before {
+                    content: "";
+                    width: calc(100% - 20px);
+                    height: 1px;
+                    background-color: var(--black);
+                    position: absolute;
+                    bottom: 4px;
+                    left: 10px;
+                    transform: scaleX(0);
+                    transition: all 0.3s ease;
+                }
+                &:hover::before {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+
+    .header_mo_nav {
+        display: none;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+
+        @media (max-width:800px) {
+            display: block;
+        }
+        
+        span {
+            display: block;
+            width: 34px;
+            height: 2px;
+            background-color: var(--black);
+            margin: 14px 0;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 34px;
+                height: 2px;
+                background-color: var(--black);
+                position: absolute;
+                top: 8px;
+                right: 0;
+                transition: all 0.3s ease;
+            }
+            &::after {
+                content: "";
+                width: 34px;
+                height: 2px;
+                background-color: var(--black);
+                position: absolute;
+                bottom: 8px;
+                left: 0;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+    
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import Gnb from '../components/Gnb';
 import Header from '../components/Header';
 import Main from '../components/Main';
-import Banner from '../components/Banner';
+import Intro from '../components/Intro';
 import Profile from '../components/Profile';
 import Project from '../components/Project';
 import Contact from '../components/Contact';
@@ -14,7 +14,7 @@ export default function HomeView() {
       <Gnb />
       <Header />
       <Main>
-        <Banner />
+        <Intro />
         <Profile />
         <Project />
         <Contact />

@@ -7,20 +7,20 @@
     --mainNum-font: "Nanum Gothic";
 
     // backgound color
-    --mainBg-color: "#f3ede8";
-    --subBg100: "#cdc0b1";
-    --subBg200: "#afa395";
-    --subBg300: "#81887c";
-    --subBg400: "#afa7a2";
-    --subBg500: "#a6afa2";
+    --mainBg-color: rgb(255, 255, 255);
+    --ubBg100: rgba(200, 200, 200, 1);
+    --subBg200: rgba(73, 73, 73, 1);
+    --subBg300: rgba(51, 50, 50, 1);
+    --subBg400: rgba(45, 45, 45, 1);
+
 
     // color
-    --white: "#fff";
-    --black: "#000";
-    --black100: "#222";
-    --black200: "#444";
-    --black300: "#666";
-    --black400: "#eee";
+    --white: #fff;
+    --black: #222;
+    --black100: #444;
+    --black200: #666;
+    --black300: #aaa;
+    --black400: #eee;
 
     font-family: var(--mainEng-font), var(--mainKor-font);
     font-size: 16px;
@@ -40,5 +40,5 @@
 }
 
 body {
-    background-color: var(--mainBg-color);
+    background-color: var(--subBg400);
 }

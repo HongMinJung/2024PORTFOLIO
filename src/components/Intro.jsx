@@ -1,6 +1,6 @@
 import React from 'react';
 // intro
-export default function Banner() {
+export default function Intro() {
   return (
     <div>Banner</div>
   )

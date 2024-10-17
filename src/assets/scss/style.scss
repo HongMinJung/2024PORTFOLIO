@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 /* settion */
-@import "setting/fonts";
-@import "setting/mixin";
-@import "setting/reset";
-@import "setting/vars";
+@use "setting/fonts";
+@use "setting/mixin";
+@use "setting/reset";
+@use "setting/vars";
 
 /* section */
-@import "section/banner";
-@import "section/contact";
-@import "section/footer";
-@import "section/header";
-@import "section/profile";
-@import "section/project";
+@use "section/banner";
+@use "section/contact";
+@use "section/footer";
+@use "section/header";
+@use "section/profile";
+@use "section/project";
