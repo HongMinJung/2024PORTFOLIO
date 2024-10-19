@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { headerNav } from '../contents';
 
+
+
 export default function Header() {
   const [ show, setShow ] = useState(false);
 
@@ -12,7 +14,7 @@ export default function Header() {
     <header id='header' role='banner'>
       <div className='header_inner'>
         <div className='header_logo'>
-          <a href="/">PORTFOLIO</a>
+          <a href="#intro">HONG MIN JUNG</a>
         </div>
 
         <nav className={`header_nav ${show ? "show": ""}`} role='navigation' aria-label='메인 메뉴'>

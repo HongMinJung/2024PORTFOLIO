@@ -3,22 +3,21 @@
 :root {
     // font
     --mainEng-font: "Montserrat";
-    --mainKor-font: "Noto Sans KR";
-    --mainNum-font: "Nanum Gothic";
+    --mainKor-font: "Gothic";
 
     // backgound color
-    --mainBg-color: rgb(255, 255, 255);
-    --ubBg100: rgba(200, 200, 200, 1);
-    --subBg200: rgba(73, 73, 73, 1);
-    --subBg300: rgba(51, 50, 50, 1);
-    --subBg400: rgba(45, 45, 45, 1);
+    --mainBg-color: #efe2d3;
+    --subBg100: #d8ccbe;
+    --subBg200: #fff;
+    --subBg400: #333;
 
 
     // color
+    --main-color: #CE453B;
     --white: #fff;
-    --black: #222;
-    --black100: #444;
-    --black200: #666;
+    --black: #555;
+    --black100: #333;
+    --black200: #777;
     --black300: #aaa;
     --black400: #eee;
 
@@ -40,5 +39,5 @@
 }
 
 body {
-    background-color: var(--subBg400);
+    background-color: var(--mainBg-color);
 }

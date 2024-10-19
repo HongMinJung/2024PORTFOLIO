@@ -5,7 +5,7 @@ export const headerNav = [
     },
 
     {
-      title: 'PEOFLIE',
+      title: 'PROFLIE',
       url: '#proflie'
     },
 
@@ -19,3 +19,8 @@ export const headerNav = [
       url: '#contact'
     }
 ];
+
+export const introText = {
+  title:'PORTFOLIO',
+  desc: ['앞으로의 성장이 기대되는','JUNIOR  |  WEB PUBLISHER','HONG MIN JUNG']
+}
