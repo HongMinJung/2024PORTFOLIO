@@ -2,8 +2,6 @@
 
 #intro {
     height: 100vh;
-    color: var(--main-color);
-    // text-align: center;
 
     .intro__inner {
         width: 100%;
@@ -22,12 +20,10 @@
             white-space: nowrap;
             text-indent: -0.5vw;
             letter-spacing: -0.3vw;
-            text-shadow: 
-                1px 1px 0 rgba(234, 209, 180, 0.2),
-                2px 2px 0 rgba(0, 0, 0, 0.2);
-    
+            text-shadow: 2px 4px 5px #8e8e8e;
+
             @media (max-width:850px) {
-                font-size: 10vw;
+                font-size: 12vw;
             }
         }
 
@@ -43,16 +39,19 @@
 
             .text {
                 margin-top: 20px;
-                font-size: 2vw;
-                font-weight: 500;
-                line-height: 1.2;
+                font-size: 1.8vw;
+                line-height: 1.4;
 
                 @media (max-width:850px) {
-                    font-size: 3.5vw;
+                    font-size: 3.8vw;
                 }
-
+                .first_text {
+                    font-family: var(--mainKor-font);
+                    font-weight: 600;
+                }
                 .second_text {
-                    color: var(--black);
+                    color: var(--black200);
+                    font-weight: 500;
                 }
 
                 .third_text{

@@ -6,20 +6,22 @@
     --mainKor-font: "Gothic";
 
     // backgound color
-    --mainBg-color: #efe2d3;
-    --subBg100: #d8ccbe;
-    --subBg200: #fff;
-    --subBg400: #333;
+    --mainBg-color: #272727;
+    --subB100: #fff;
+    --subBg200: #eee;
+    --subBg300: #777;
+    --subBg400: #555;
+    --subBg500: #333;
+    --subBg600: #0f0f0f;
 
 
     // color
-    --main-color: #CE453B;
+    --main-color: #e1e1e1;
     --white: #fff;
-    --black: #555;
-    --black100: #333;
-    --black200: #777;
+    --black: #222;
+    --black100: #555;
+    --black200: #888;
     --black300: #aaa;
-    --black400: #eee;
 
     font-family: var(--mainEng-font), var(--mainKor-font);
     font-size: 16px;
@@ -39,5 +41,6 @@
 }
 
 body {
+    color: var(--main-color);
     background-color: var(--mainBg-color);
 }

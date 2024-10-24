@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@use "../setting/mixin";
+
+.proflie_inner {
+    padding: 20px;
+
+    .inner_title {
+        background-color: var(--mainBg-color);
+        width:100%;
+        height: 5vw;
+        font-size: 4vw;
+        font-weight: 600;
+        line-height: 1.2;
+        color: var(--black300);
+        border-top: 0.2vw solid var(--black300);
+        border-bottom: 0.2vw solid var(--black300);
+        margin-bottom: 100px;
+        position: sticky;
+        top: 70px;
+        left: 0px;  
+
+
+        @media (max-width:850px) {
+            width: 100%;
+            height: auto;
+            font-size: 30px;
+            margin-bottom: 100vw;
+            top: 68px;
+            z-index: 1000;
+        }
+    }
+
+    .proflie_wrap {
+        
+        .proflie_box {
+            @include mixin.flex-between;
+            flex-direction: column;
+            height: 90Vh;
+            padding: 20px;
+            box-shadow: 0px 0px 20px rgb(0, 0, 0);
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            position: sticky;
+            left: 0;
+
+ 
+            &.s1 {
+                background-color: var(--mainBg-color);
+                top: 180px;
+
+                @media (max-width:850px) {
+                    top: 140px;
+                }
+            }
+            &.s2 {
+                background-color: var(--mainBg-color);
+                top: 200px;
+
+                @media (max-width:850px) {
+                    top: 160px;
+                }
+            }
+            &.s3 {
+                background-color: var(--mainBg-color);
+                top: 220px;
+
+                @media (max-width:850px) {
+                    top: 180px;
+                }
+            }
+            &.s4 {
+                background-color: var(--mainBg-color);
+                top: 240px;
+
+                @media (max-width:850px) {
+                    top: 200px;
+                }
+            }
+            // title
+            .box_name {
+                font-size: 5vw;
+                font-weight: 500;
+                line-height: 1;
+                position: absolute;
+                top: 2vw;
+                left: 2vw;
+                z-index: 1000;
+                color: var(--white);
+                // margin: 20px;
+
+                @media (max-width:850px) {
+                    font-size: 40px;
+                    top: 20px;
+                    left: 20px;
+                }
+            }
+            // proflie img
+            .img {
+                width: 30%;
+                height: auto;
+                border-radius: 30px;
+                position: absolute;
+                top: 10vh;
+                left: 12vw;
+                opacity: 0.5;
+
+                &:hover {
+                    opacity: 1;
+                }
+                
+                @media  (max-width:850px) {
+                    width: 50%;
+                    top: auto;
+                    left: 25%;
+                }
+            }
+
+            // right
+            .text {
+                width: 50%;
+                height: 50%;
+                font-family: var(--mainKor-font);
+                font-size: 1.2vw;
+                line-height: 1.2;
+                border-radius: 20px;
+                position: absolute;
+                top: 20vh;
+                right: 5vw;
+                z-index: 1000;
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+                // align-items: flex-end;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+
+                @media (max-width:850px) {
+                    width: 90%;
+                    height: 40%;
+                    top: 50%;
+                    right: 5%;
+                    font-size: 16px;
+                    background-color: none;
+
+                }
+                // text
+                .info_title {
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    font-size: 1.5vw;
+
+                    @media (max-width:850px) {
+                        font-size: 18px;
+                        margin-bottom: 8px;
+
+                    }
+                    em {
+                        font-size: 1.2vw;
+                        font-weight: 500;
+
+                        @media (max-width:850px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .dec {
+                    line-height: 1;
+                    letter-spacing: 0.6px;
+
+                    @media (max-width:840px) {
+                        font-size: 12px;
+                    }
+
+                }
+                .info {
+                    font-size: 1.3vw;
+                    margin-top: 20px;
+                    text-align: left;
+                    @media (max-width:850px) {
+                        font-size: 16px;
+                    }
+
+                    .info_dec {
+                        font-weight: 600;
+                        margin-left: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @use "../setting/mixin";
 
 #header {
@@ -9,12 +8,11 @@
 
 .header_inner {
     @include mixin.flex-between;
-    background-color: none;
-    background-color: var(----mainBg-color);
-    box-shadow: 0 1px 10px 10px #d6c9bb;
-    backdrop-filter: blur(50px);
+    background-color: var(--mainBg-color);
+    box-shadow: 0 1px 16px 10px var(--black);
+    backdrop-filter: blur(10px);
     padding: 1rem;
-    color: var(--black);
+    color: var(--black300);
 
     .header_logo {
         font-size: 1rem;
@@ -38,7 +36,7 @@
                     top: 60px;
                     right: 0;
                     background-color: var(--mainBg-color);
-                    backdrop-filter: blur(15px);
+                    backdrop-filter: blur(10px);
                     z-index: 3000;
                     min-width: 100%;
                     padding: 20px 0;
@@ -81,7 +79,7 @@
 
                 &:hover {
                     color: var(--main-color);
-                    font-weight: 500;
+                    font-weight: 600;
                 }
 
                 &::before {
