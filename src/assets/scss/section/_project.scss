@@ -31,7 +31,7 @@
 
         .project_box {
             width: 500px;
-            height: 90vh;
+            height: 80vh;
             padding: 2rem;
             margin-right: 20px;
             background-color: var(--subBg300);
@@ -57,14 +57,10 @@
                 background-color: var(--subBg500);
             }
 
-
-            .num {
-                font-size: 2rem;
-            }
-
             .img {
                 display: block;
                 margin: 0 auto;
+                width: 86%;
                 margin-top: 10px;
                 transition: margin-top 0.3s;
 

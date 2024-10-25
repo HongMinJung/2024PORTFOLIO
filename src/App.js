@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomeView from './views/HomeView';
-// css 파일
-import './App.css';
+import smooth from './utils/smooth';
+import link from './utils/link';
 
 function App() {
+
+  useEffect (() => {
+    smooth();
+    link();
+  }, []);
+  
   return (
     <BrowserRouter>
       <Routes>
