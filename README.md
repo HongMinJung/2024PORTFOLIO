@@ -25,3 +25,8 @@ React.js 컴포넌트를 기반으로 재사용이 쉽고 구조적으로 조직
 - assets : 이미지 및 css 파일을 작성합니다.
 - contents : 사이트에 사용할 데이터를 보관합니다.
 - utils : 기타 자바스크립트 파일을 작성합니다.
+
+## Github 업로드
+- git add .
+- git commit -m "커밋 메세지"
+- git push -u origin main
