@@ -91,6 +91,10 @@ export const contactText = [
   },
   {
     link: 'https://github.com/HongMinJung',
+    title: 'Resume'
+  },
+  {
+    link: 'https://github.com/HongMinJung',
     title: 'Project Plan'
   }
 ]

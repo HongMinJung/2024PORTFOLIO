@@ -1,8 +1,8 @@
 import React from 'react';
 import Aboutme from './Aboutme';
 import Skill from './Skill';
-import Education from './Education';
-import Career from './Career';
+// import Education from './Education';
+// import Career from './Career';
 
 export default function Profile() {
   return (
@@ -24,10 +24,10 @@ export default function Profile() {
           </article>
 
           {/* Education */}
-          <article className='proflie_box s3'>
+          {/* <article className='proflie_box s3'>
             <p className='box_name'>EDUCATION</p>
             <Education />
-          </article>
+          </article> */}
 
           {/* Career */}
           {/* <article className='proflie_box s4'>
