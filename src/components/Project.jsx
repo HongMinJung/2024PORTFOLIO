@@ -46,8 +46,9 @@ export default function Project() {
                 <img src={project.img} alt={project.name} />
               </a>
               <h3 className='title'>{project.title}</h3>
+              <p className='day'>{project.day}</p>
               <p className='dec'>{project.desc}</p>
-              <a href={project.view} target='_blank' className='site' rel='noopener noreferrer'>View</a>
+              <a href={project.view} target='_blank' className='site' rel='noopener noreferrer'>사이트 보러가기</a>
             </article>
             ))}
         </div>
